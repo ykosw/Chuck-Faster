@@ -1,0 +1,31 @@
+name: ChuckFaster
+version: '${project.version}'
+main: fr.tbscorps.chuckfaster.ChuckFaster
+api-version: '1.21'
+author: SEBmyG
+description: Plugin pour accélérer la croissance des plantes avec des blocs de magnétite
+website: https://tbscorps.fr
+# Plus besoin de dépendance externe pour les hologrammes
+
+commands:
+  chfast:
+    description: Commandes principales du plugin ChuckFaster
+    usage: /<command> [give|reload|info|help] [arguments]
+    permission: chuckfaster.admin
+    aliases: [cf, chuckfast]
+  cfreload:
+    description: Recharger la configuration du plugin
+    usage: /cfreload
+    aliases: [cfr]
+    permission: chuckfaster.admin
+
+permissions:
+  chuckfaster.admin:
+    description: Permet d'utiliser toutes les commandes du plugin
+    default: op
+  chuckfaster.use:
+    description: Permet d'utiliser les blocs de magnétite
+    default: true
+  chuckfaster.give:
+    description: Permet d'utiliser la commande give
+    default: op

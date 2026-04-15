@@ -1,0 +1,84 @@
+# Configuration ChuckFaster
+# Plugin développé par SEBmyG - TBS Corps
+
+magnetite:
+  # Pourcentage d'augmentation de vitesse par diamant (en %)
+  speed-increase-per-diamond: 2.5
+  
+  # Nombre maximum de diamants par bloc
+  max-diamonds-per-block: 64
+  
+  # Rayon d'effet en chunks (1 = chunk courant seulement)
+  chunk-radius: 1
+  
+  # Nom du bloc personnalisé (utilisé dans les items et GUI)
+  block-name: "Chuck Faster"
+  
+  # Description du bloc (lore de l'item)
+  block-description:
+    - "Un bloc mystérieux qui accélère"
+    - "la croissance des plantes."
+    - ""
+    - "Alimentez-le avec des diamants"
+    - "pour augmenter son efficacité !"
+    - ""
+    - "TBS Corps - ChuckFaster"
+  
+  particles:
+    # Activer les particules
+    enabled: true
+    # Type de particule à afficher (HAPPY_VILLAGER, COMPOSTER, etc.)
+    type: "HAPPY_VILLAGER"
+    # Nombre de particules à générer
+    count: 3
+    
+  hologram:
+    # Activer le texte flottant au-dessus du bloc
+    enabled: true
+    # Hauteur de l'hologramme au-dessus du bloc (en blocs)
+    height: 2.2
+    # Format de l'hologramme (variables: {speed})
+    format: "&e⚡ &a+{speed}% &e⚡"
+
+growth:
+  # Chance de base pour qu'une plante pousse (0.0 à 1.0)
+  base-chance: 0.1
+  
+  # Vitesse des tâches (en ticks, 20 ticks = 1 seconde)
+  growth-task-interval: 20
+  particle-task-interval: 10
+
+messages:
+  prefix: "&8[&5ChuckFaster&8]&r "
+  no-permission: "&cVous n'avez pas la permission d'utiliser cela."
+  magnetite-placed: "&aChuck Faster placé avec succès !"
+  magnetite-broken: "&eChuck Faster récupéré !"
+  magnetite-destroyed: "&aChuck Faster détruit et récupéré !"
+  diamond-added: "&aBloc de diamant ajouté ! Vitesse: &6{speed}%"
+  inventory-full: "&cVotre inventaire est plein !"
+  plugin-enabled: "&aChuckFaster activé avec succès !"
+  plugin-disabled: "&cChuckFaster désactivé !"
+  config-reloaded: "&aConfiguration rechargée avec succès !"
+  
+gui:
+  # Activer le bouton de destruction dans l'interface
+  enable-destroy-button: true
+  # Titre de l'interface GUI
+  title: "Chuck Faster"
+  # Couleur du titre (DARK_PURPLE, GOLD, GREEN, etc.)
+  title-color: "DARK_PURPLE"
+  
+commands:
+  # Messages des commandes
+  give-success-sender: "&aVous avez donné {amount} {item} à {player}"
+  give-success-target: "&aVous avez reçu {amount} {item} de {sender}"
+  player-not-found: "&cJoueur introuvable: {player}"
+  invalid-amount: "&cQuantité invalide: {amount}"
+  
+debug:
+  # Activer les messages de débogage dans la console
+  enabled: false
+  # Afficher les détails des tâches de croissance
+  show-growth-details: false
+  # Afficher les interactions GUI
+  show-gui-interactions: false
