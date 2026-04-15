@@ -130,9 +130,8 @@ Le fichier `.jar` sera généré dans `target/chuckfaster-1.0.0.jar`
 ## Support
 
 - **Développeur** : SEBmyG
-- **Entreprise** : TBS Corps
-- **Site web** : https://tbscorps.fr
-- **Contact** : sebmyg@tbscorps.fr
+- **Site web** : 
+- **Contact (discord)** : sebmyg
 
 ## Version
 
